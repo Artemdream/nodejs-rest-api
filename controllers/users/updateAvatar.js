@@ -1,9 +1,9 @@
-const { User } = require("../../models");
 const Jimp = require("jimp");
+const fs = require("fs/promises");
 
+const { User } = require("../../models");
 const { ctrlWrapper } = require("../../helpers");
 const path = require("path");
-const fs = require("fs/promises");
 
 const avatarsDir = path.join(__dirname, "../../", "public", "avatars");
 
