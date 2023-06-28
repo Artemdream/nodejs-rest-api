@@ -4,7 +4,6 @@ const { ctrlWrapper } = require("../../helpers");
 
 const updateSubscription = async (req, res) => {
   const { id } = req.params;
-  //   console.log(_id);
   const result = await User.findByIdAndUpdate(id, req.body, {
     new: true,
   });
